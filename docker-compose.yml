@@ -1,0 +1,13 @@
+version: "3" 
+
+services:
+  podimo:
+    image: sauerhosen/thijstool:latest
+    container_name: podimo
+    environment:
+      - PODIMO_HOSTNAME=podimo.jouwdomeinnaam.nl
+      - PODIMO_BIND_HOST=0.0.0.0:12104
+      - ZENROWS_API_KEY=jouw_api_key
+    ports:
+      - 443:12104
+    restart: unless-stopped    
