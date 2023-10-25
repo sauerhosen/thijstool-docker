@@ -32,7 +32,8 @@ Goed bezig! Ga nu naar zenrows.com en maar een gratis proefaccount aan. Je ziet 
 
 
 ## Stap 5: Controleer de logs of de tool werkt
-1. Voer het commando `docker compose logs -f` in om de logs te bekijken. 
+1. Voer het commando `docker compose logs -f` in om de logs te bekijken. Als alles goed is, staat er zo iets:
+    > podimo  | [2023-10-25 21:19:23 +0200] [1] [INFO] Running on http://0.0.0.0:12104 (CTRL + C to quit)
 2. Sluit de logs met Ctrl-C
 
 ## [Stap 6 - Optioneel]: Controleer op updates van de tool
