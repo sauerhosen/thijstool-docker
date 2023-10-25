@@ -1,7 +1,7 @@
 
 ---
 
-# Installatie en gebruik van Docker Compose op een Raspberry Pi
+# Installatie en gebruik van de Thijstool met Docker Compose op een Raspberry Pi
 
 ## Stap 1: Installeren van Docker op Raspberry Pi
 1. Voer het volgende commando in het systeem helemaal up-to-date te maken: `sudo apt-get update && sudo apt-get upgrade`
@@ -28,10 +28,18 @@ Goed bezig! Ga nu naar zenrows.com en maar een gratis proefaccount aan. Je ziet 
 2. Als het downloaden afgerond is, start je de tool met het commando `docker compose up -d` 
 3. Als alles goed is gegaan, zie je iets dit op je scherm: 
     > ✔ Container podimo             Started
+4. Om de tool te stoppen, type: `docker compose down`
 
 
 ## Stap 5: Controleer de logs of de tool werkt
 1. Voer het commando `docker compose logs -f` in om de logs te bekijken. 
 2. Sluit de logs met Ctrl-C
 
+## [Stap 6 - Optioneel]: Controleer op updates van de tool
+1. Voer het commando `docker compose pull` in om evt. nieuwe images van de de Thijstool te downloaden
+2. Als het downloaden afgerond is, start je de nieuwe versie van de tool weer met het commando `docker compose up -d` 
+
+
 Gefeliciteerd! Je hebt de Thijstool in Docker draaien. 
+
+Veel luisterplezier! Vergeet je de [koffie voor Thijs](https://www.buymeacoffee.com/thijsr) niet? En nogmaals: als je er niet uitkomt is er in de Telegram groep altijd wel iemand die wil helpen. Durf te vragen. 😊
