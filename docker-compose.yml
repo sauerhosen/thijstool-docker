@@ -5,9 +5,9 @@ services:
     image: sauerhosen/thijstool:latest
     container_name: podimo
     environment:
-      - PODIMO_HOSTNAME=podimo.jouwdomeinnaam.nl
-      - PODIMO_BIND_HOST=0.0.0.0:12104
-      - ZENROWS_API_KEY=jouw_api_key
+      - PODIMO_HOSTNAME=podimo.jouwdomeinnaam.nl # Vul je IP adres of domeinnaam in
+      - PODIMO_BIND_HOST=0.0.0.0:12104 # Laat dit staan (tenzij je weet wat je doet)
+      - ZENROWS_API_KEY=jouw_api_key # Vul hier je Zenrows API key in
     ports:
-      - 443:12104
+      - 12104:12104 # Laat staan, tenzij je weet wat je doet. Wijzig de port (bijv in 443 als je de Thijstool zonder poort toevoeging (ip-adres:portnr) wil benaderen). 
     restart: unless-stopped    
