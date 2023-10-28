@@ -9,6 +9,8 @@ services:
       - PODIMO_BIND_HOST=0.0.0.0:12104 # Laat dit staan (tenzij je weet wat je doet)
       - ZENROWS_API_KEY=jouw_api_key # Vul hier je Zenrows API key in
       - PODCAST_CACHE_TIME=21600 # 21600 seconden = 6 uur.  
+      - DEBUG=true # Debug aan of uit
+      - PODIMO_PROTOCOL=https # what protocol is being used for all links that are displayed to the user. 
     ports:
       - 12104:12104 # Laat staan, tenzij je weet wat je doet. Wijzig de port (bijv in 443 als je de Thijstool zonder poort toevoeging (ip-adres:portnr) wil benaderen). 
     restart: unless-stopped    
