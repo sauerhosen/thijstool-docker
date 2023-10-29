@@ -2,7 +2,8 @@ version: "3"
 
 services:
   podimo:
-    image: sauerhosen/thijstool:latest
+    image: sauerhosen/thijstool:latest # voor Raspberry Pi en andere ARM systemen
+    # image: sauerhosen/thijstool:amd64-latest # voor Intel/AMD systemen
     container_name: podimo
     environment:
       - PODIMO_HOSTNAME=podimo.jouwdomeinnaam.nl # Vul je IP adres of domeinnaam in
