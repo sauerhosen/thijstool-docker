@@ -14,4 +14,6 @@ services:
       - PODIMO_PROTOCOL=https # what protocol is being used for all links that are displayed to the user. 
     ports:
       - 12104:12104 # Laat staan, tenzij je weet wat je doet. Wijzig de port (bijv in 443 als je de Thijstool zonder poort toevoeging (ip-adres:portnr) wil benaderen). 
+    volumes:
+    - ./podimo_cache:/src/cache
     restart: unless-stopped    
